@@ -1,0 +1,28 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulineeds/Node.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paulineeds/Node/issues"
+  },
+  "homepage": "https://github.com/paulineeds/Node#readme",
+  "dependencies": {
+    "argv": "0.0.2",
+    "axios": "^0.18.0",
+    "chalk": "^2.4.2",
+    "email-validator": "^2.0.4",
+    "figlet": "^1.2.1",
+    "ora": "^3.1.0",
+    "yargs": "^13.1.0"
+  }
+}
