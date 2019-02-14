@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/paulineeds/Node.git"
   },
-  "author": "",
+  "author": "Pauline De Smet",
   "license": "ISC",
   "bin": {
     "pwned": "index.js"
