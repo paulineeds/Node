@@ -1,7 +1,7 @@
 {
-  "name": "node",
+  "name": "@pauline/pwned",
   "version": "1.0.0",
-  "description": "",
+  "description": "find if your email is breached",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,6 +12,9 @@
   },
   "author": "",
   "license": "ISC",
+  "bin": {
+    "pwned": "index.js"
+  },
   "bugs": {
     "url": "https://github.com/paulineeds/Node/issues"
   },
@@ -23,6 +26,7 @@
     "email-validator": "^2.0.4",
     "figlet": "^1.2.1",
     "ora": "^3.1.0",
+    "readline-sync": "^1.4.9",
     "yargs": "^13.1.0"
   }
 }

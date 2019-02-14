@@ -41,6 +41,7 @@ const validator = require("email-validator");
 const axios = require("axios");
 const argv = require("yargs").argv;
 const chalk = require('chalk');
+const readlineSync = require('readline-sync')
 
 // WRITE INFO
 const checkEmail = (e) => {
@@ -71,9 +72,9 @@ const writeError = (x) => {
     }
 }
 
+email=readlineSync.question("what's your e-mail adress ")
 // Validate
-if (validator.validate(argv._[0])) {
-    const email = argv._[0];
+if (validator.validate(email)) {
     console.log(chalk.cyan.bold.underline(email));
     console.log('');
 
@@ -90,6 +91,6 @@ if (validator.validate(argv._[0])) {
         .then(response => checkEmail(response))
         .catch(error => writeError(error))
 } else {
-    const notEmail = argv._[0];
+    const notEmail = email;
     console.log(`${chalk.cyan.bold(notEmail)} ${chalk.red(`didn't pass as a correct mail-adress`)}`);
 }
