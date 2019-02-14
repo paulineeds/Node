@@ -1,5 +1,5 @@
 {
-  "name": "@pauline/pwned",
+  "name": "@paulineeds/pwned",
   "version": "1.0.0",
   "description": "find if your email is breached",
   "main": "index.js",
